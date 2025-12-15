@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker</title>
+    <link rel="stylesheet" href="adso.css">
+</head>
+<body>
+    <div class="container">
+        <!-- LEFT SIDE: HABITS -->
+        <div class="habit-tracker">
+            <h2>Habit Tracker</h2>
+            <!-- Habit Template (repeat 5 times) -->
+            <div class="habit" id="habit1">
+                <label>Practice Daily Exercise</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit1')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit1')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit1')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit1')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit1')">
+                </div>
+                <div class="progress-bar" id="habit1-bar"></div>
+                <p class="streak-text" id="habit1-streak">Streak: 0</p>
+            </div>
+            <div class="habit" id="habit2">
+                <label>Maintain a Consistent Sleep Schedule</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit2')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit2')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit2')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit2')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit2')">
+                </div>
+                <div class="progress-bar" id="habit2-bar"></div>
+                <p class="streak-text" id="habit2-streak">Streak: 0</p>
+            </div>
+            <div class="habit" id="habit3">
+                <label>Eat Mindfully and Stay Hydrated</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit3')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit3')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit3')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit3')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit3')">
+                </div>
+                <div class="progress-bar" id="habit3-bar"></div>
+                <p class="streak-text" id="habit3-streak">Streak: 0</p>
+            </div>
+            <div class="habit" id="habit4">
+                <label>Plan and Prioritize Daily Tasks</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit4')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit4')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit4')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit4')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit4')">
+                </div>
+                <div class="progress-bar" id="habit4-bar"></div>
+                <p class="streak-text" id="habit4-streak">Streak: 0</p>
+            </div>
+            <div class="habit" id="habit5">
+                <label>Practice Mindfulness or Journaling</label>
+                <div class="checkbox-group">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit5')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit5')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit5')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit5')">
+                    <input type="checkbox" class="habit-checkbox" onchange="updateBar('habit5')">
+                </div>
+                <div class="progress-bar" id="habit5-bar"></div>
+                <p class="streak-text" id="habit5-streak">Streak: 0</p>
+            </div>
+        </div>
+        <!-- RIGHT SIDE: LEGEND -->
+        <div class="legend">
+            <h3>Legend</h3>
+            <p><span class="color-box red"></span> 1 Streak (Red) – Needs Improvement</p>
+            <p><span class="color-box yellow"></span> 2–3 Streaks (Yellow) – Good</p>
+            <p><span class="color-box green"></span> 4–5 Streaks (Green) – Excellent</p>
+        </div>
+    </div>
+    <script src="adso.js"></script>
+</body>
+</html>
